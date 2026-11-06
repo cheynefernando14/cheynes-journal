@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cheyne's Journal | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-theme">
+
+  <!-- Top Navigation & Controls Bar -->
+  <div class="top-controls">
+    <div class="top-nav-buttons">
+      <button class="top-nav-btn active" data-tab="journal">Journal</button>
+      <button class="top-nav-btn" data-tab="about">About Me</button>
+      <button class="top-nav-btn" data-tab="favorites">Favorites</button>
+      <button class="top-nav-btn" data-tab="highlights">Highlights</button>
+    </div>
+    <div class="utility-controls">
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <div class="ambient-player">
+        <button id="audio-toggle">🎵 music</button>
+        <audio id="ambient-audio" loop src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=lofi-study-112191.mp3"></audio>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-wrapper">
+    <!-- Blue Sidebar Navigation for Journal Entries -->
+    <aside class="sidebar-blue">
+      <div class="stamp-badge-light">NOVEMBER ARCHIVE</div>
+      
+      <nav class="journal-nav-list">
+        <a href="#" class="journal-item active">Nov 1: Heart2Heart Volunteering Run</a>
+        <a href="#" class="journal-item">Oct 30: Halloween as Nezuko</a>
+        <a href="#" class="journal-item">Oct 25: Martial Arts Class</a>
+        <a href="#" class="journal-item">Oct 23: Growth Mindset</a>
+        <a href="#" class="journal-item">Oct 18: Youth Ministry</a>
+        <a href="#" class="journal-item">Oct 14: My Birthday</a>
+        <a href="#" class="journal-item">Oct 12: At The Beach</a>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <button class="collapse-btn">⌄</button>
+      </div>
+    </aside>
+
+    <!-- Main Content Stage -->
+    <main class="content-area">
+      <!-- Header Branding -->
+      <div class="header-banner">
+        <div>
+          <h1 class="site-title">CHEYNE’S JOURNAL</h1>
+          <p class="url-sub">cheynesjournal.com</p>
+        </div>
+        <div class="update-info">
+          JOURNAL & SCRAPBOOK | UPDATED: NOVEMBER 1, 2026
+        </div>
+      </div>
+
+      <!-- Journal / Overview Tab -->
+      <section id="tab-journal" class="tab-content active">
+        <div class="main-display-grid">
+          <div class="paper-card main-feature-card">
+            <h2 class="section-heading">NOVEMBER ARCHIVE</h2>
+            <h3 class="entry-title">ENTRY 28: HEART2HEART VOLUNTEERING RUN</h3>
+            <div class="polaroid-main-container">
+              <img src="20261101_170307.jpg" alt="Heart2Heart Volunteering Run" class="main-featured-photo" />
+              <div class="verified-stamp">VERIFIED</div>
+            </div>
+          </div>
+
+          <!-- Right Polaroid Card -->
+          <div class="polaroid-side-card">
+            <div class="polaroid-frame">
+              <img src="20261031_154942.jpg" alt="November Captures" />
+              <p class="polaroid-caption">November Captures</p>
+            </div>
+            <div class="vertical-scrapbook-label">MEMORIES</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-about" class="tab-content">
+        <div class="paper-card">
+          <h2>About Me</h2>
+          <p class="editorial-text">Welcome to my personal archive. A space dedicated to memories, volunteering, and creative experiments.</p>
+        </div>
+      </section>
+
+      <section id="tab-favorites" class="tab-content">
+        <div class="paper-card">
+          <h2>Favorites</h2>
+          <p class="editorial-text">Moments, things, and experiences that bring joy and inspiration.</p>
+        </div>
+      </section>
+
+      <section id="tab-highlights" class="tab-content">
+        <div class="paper-card">
+          <h2>Highlights</h2>
+          <p class="editorial-text">Key milestones and milestones captured throughout the journey.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
